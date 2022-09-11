@@ -1,0 +1,17 @@
+<div class="container">
+    <p class="kite">Kite</p>
+    <form [formGroup]="signup1" (ngSubmit)="signupdata(signup1)">
+        <label for="username" class="form_label">Username</label>
+        <input formControlName="username" type="text" class="form_control">
+        <label for="password" class="form_label">Password</label>
+        <input formControlName="password" type="password" class="form_control">
+        <label for="email" class="form_label">Email</label>
+        <input formControlName="email" type="email" class="form_control">
+        <label for="phone" class="form_label">Phone number</label>
+        <input formControlName="phone" type="text" class="form_control">
+        <p class="login">Already have an account?
+            <a routerLink="/login">Login</a>
+        </p>
+        <button type="submit" class="btn">Signup</button>
+    </form>
+</div>
